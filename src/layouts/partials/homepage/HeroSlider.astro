@@ -1,0 +1,91 @@
+---
+import { getLangFromUrl, slugSelector } from "@/lib/utils/languageParser";
+import { markdownify } from "@/lib/utils/textConverter";
+
+const { heroSlider } = Astro.props;
+let lang = getLangFromUrl(Astro.url);
+---
+
+{
+  heroSlider?.enable && (
+    <section class="section pt-0">
+      <div class="swiper banner-slider relative">
+        <div class="swiper-wrapper">
+          {heroSlider.slider_item.map(
+            (slider: {
+              bg_image: string;
+              subtitle: string;
+              title: string;
+              content: string;
+              button: { enable: boolean; label: string; link: string };
+            }) => (
+              <div class="swiper-slide relative">
+                <div class="relative h-[720px]">
+                  <div
+                    class="absolute inset-0 bg-cover bg-center"
+                    style={{
+                      backgroundImage: `url(${slider.bg_image})`,
+                    }}
+                  />
+                  {/* <div class="absolute inset-0 bg-gradient-to-l from-[#00000040] to-[#00000050] z-10" /> */}
+                  <div class="container 2xl:container-lg relative z-20 h-full flex flex-col justify-center items-start text-text-dark">
+                    <p
+                      class="mb-2 font-semibold lg:text-xl text-text-dark rounded-full inline-block uppercase"
+                      set:html={markdownify(slider.subtitle ?? "")}
+                    />
+                    <h1
+                      class="mb-6 md:text-7xl uppercase font-semibold"
+                      set:html={markdownify(slider.title ?? "")}
+                    />
+                    <p
+                      class="mb-5 lg:mb-9 lg:text-lg xl:max-w-[700px] leading-7 text-balance font-thin"
+                      set:html={markdownify(slider.content ?? "")}
+                    />
+                    {slider.button && slider.button.enable && (
+                      <a
+                        class="btn btn-outline-primary"
+                        href={slugSelector(slider.button.link, lang)}
+                      >
+                        <span>{slider.button.label}</span>
+                      </a>
+                    )}
+                  </div>
+                </div>
+              </div>
+            )
+          )}
+        </div>
+
+        {/* Navigation buttons  */}
+        <div class="swiper-button-next" />
+        <div class="swiper-button-prev" />
+      </div>
+    </section>
+  )
+}
+
+<script>
+  import { Swiper } from "swiper";
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+  import { Autoplay, Navigation, Pagination } from "swiper/modules";
+
+  // astro:page-load event is fired when the page is loaded
+  document.addEventListener("astro:page-load", () => {
+    new Swiper(".banner-slider", {
+      modules: [Autoplay, Pagination, Navigation],
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: 1,
+      // autoplay: {
+      //   delay: 2500,
+      //   disableOnInteraction: false,
+      // },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  });
+</script>

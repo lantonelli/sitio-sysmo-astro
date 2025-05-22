@@ -1,0 +1,35 @@
+---
+import ServiceCard from "@/components/ServiceCard.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+
+const { serviceIndex, services } = Astro.props;
+const filteredServices = services.filter((service: any) => {
+  return service.data.principal == true;
+});
+---
+
+<section class="bg-gray-white">
+  <div class="section bg-secondary pb-[240px]">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <div class="section-title">
+            <span class="section-title-border border-center"></span>
+            <p
+              class="text-h5"
+              set:html={markdownify(serviceIndex?.data?.description)}
+            />
+            <h2
+              class="h1 text-white"
+              set:html={markdownify(serviceIndex?.data?.title)}
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="translate-y-[-200px]">
+    <ServiceCard services={filteredServices.slice(0, 3)} />
+  </div>
+</section>

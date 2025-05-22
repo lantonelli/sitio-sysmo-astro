@@ -1,0 +1,65 @@
+@utility bg-gradient {
+  @apply bg-gradient-to-b from-[rgba(249,249,249,1)] from-[0.53%] to-white to-[83.28%];
+}
+
+@utility rounded-sm {
+  @apply rounded-[4px];
+}
+.rounded {
+  @apply rounded-[6px];
+}
+.rounded-lg {
+  @apply rounded-[12px];
+}
+.rounded-xl {
+  @apply rounded-[16px];
+}
+
+@utility shadow {
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.05);
+}
+
+@utility stretched-link {
+  &::after {
+    @apply absolute bottom-0 left-0 right-0 top-0 z-10 content-[""];
+  }
+}
+
+/* hover effect */
+@utility hover-ripple {
+  transition: 0.2s ease-in;
+
+  &:hover {
+    transform: scale(0.97);
+
+    &::after {
+      animation: sonarEffect 1s ease-out 50ms;
+    }
+  }
+
+  &::after {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: -1;
+    opacity: 0;
+    transform: scale(0.9);
+    border-radius: inherit;
+  }
+}
+@utility ripple-white {
+  &:hover {
+    &::after {
+      animation: sonarEffectWhite 1s ease-out 50ms;
+    }
+  }
+}
+
+@utility box-shadow {
+  box-shadow: 0px 15px 39px 0px rgba(8, 18, 109, 0.1);
+}

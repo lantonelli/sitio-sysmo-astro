@@ -1,0 +1,42 @@
+---
+import PersonCard from "@/components/PersonCard.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import type { CollectionEntry } from "astro:content";
+
+type Props = {
+  teamIndex: CollectionEntry<"team">;
+  team: CollectionEntry<"team">[];
+  className?: string;
+};
+
+const { teamIndex, team, className } = Astro.props;
+---
+
+<section class={`section ${className} bg-light`}>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title">
+          <span class="section-title-border border-center"></span>
+          {
+            teamIndex?.data?.subtitle && (
+              <p set:html={markdownify(teamIndex?.data?.subtitle)} />
+            )
+          }
+          <h2 set:html={markdownify(teamIndex?.data?.title)} />
+        </div>
+      </div>
+    </div>
+    <div class="row g-4">
+      {
+        team.map((t) => {
+          const slugParts = t.id.split("/");
+          slugParts[0] = "team";
+          const modifiedSlug = slugParts.join("/");
+          t.id = modifiedSlug;
+          return <PersonCard info={t} />;
+        })
+      }
+    </div>
+  </div>
+</section>

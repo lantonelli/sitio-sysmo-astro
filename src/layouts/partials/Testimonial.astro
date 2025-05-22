@@ -1,0 +1,140 @@
+---
+import ImageMod from "@/components/ImageMod.astro";
+import { markdownify } from "@/lib/utils/textConverter";
+import { FaQuoteLeft } from "react-icons/fa";
+const { testimonial } = Astro.props;
+---
+
+{
+  testimonial.enable && (
+    <section class="section bg-[#f5f6fa] bg-dots">
+      <div class="container slider-outside">
+        <div class="row">
+          <div class="col-12 text-center relative">
+            <span class="section-title-border border-center" />
+            <p class="text-h5" set:html={markdownify(testimonial.subtitle)} />
+            <h2 class="h1 mb-10" set:html={markdownify(testimonial.title)} />
+          </div>
+          <div class="col-10 mx-auto">
+            <div class="swiper testimonial-slider">
+              <div class="swiper-wrapper">
+                {testimonial.testimonials.map(
+                  (t: {
+                    avatar: string;
+                    content: string;
+                    name: string;
+                    designation: string;
+                  }) => (
+                    //  slider-item
+                    <div class="swiper-slide slider-item">
+                      <div class="text-center flex flex-col items-center">
+                        <ImageMod
+                          class="rounded-full mb-5 w-[70px] h-[70px]"
+                          src={t.avatar}
+                          alt="client"
+                          width={70}
+                          height={70}
+                          format="webp"
+                        />
+                        <div class="relative">
+                          <div
+                            class="text-center md:pt-4"
+                            data-dot-image="/images/testimonial/client-2.jpg"
+                          >
+                            <p
+                              class="italic mb-6 text-text-dark"
+                              set:html={markdownify(t.content)}
+                            />
+                            <FaQuoteLeft className="text-primary/30 absolute top-0 left-1/2 text-[100px] -translate-x-[50px]" />
+                            <h4
+                              class="mb-2 text-h5"
+                              set:html={markdownify(t.name)}
+                            />
+                            <span
+                              class="text-primary"
+                              set:html={markdownify(t.designation)}
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  )
+                )}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Navigation buttons */}
+        <div class="mt-10">
+          <div class="swiper-button-next" />
+          <div class="swiper-button-prev" />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+<script>
+  import { Swiper } from "swiper";
+  import "swiper/css";
+  import "swiper/css/navigation";
+  import "swiper/css/pagination";
+  import { Autoplay, Navigation, Pagination } from "swiper/modules";
+
+  // astro:page-load event is fired when the page is loaded
+  document.addEventListener("astro:page-load", () => {
+    new Swiper(".testimonial-slider", {
+      modules: [Autoplay, Pagination, Navigation],
+      loop: true,
+      centeredSlides: true,
+      slidesPerView: 1,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  });
+</script>
+
+<style>
+  .swiper-button-next,
+  .swiper-button-prev {
+    transition:
+      transform 0.3s ease-in-out,
+      opacity 0.3s ease-in-out;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .swiper-button-next {
+    transform: translateX(50px);
+    right: 160px;
+  }
+
+  .swiper-button-prev {
+    transform: translateX(-50px);
+    left: 160px;
+  }
+
+  .swiper-slide {
+    position: relative;
+  }
+
+  .slider-outside:hover .swiper-button-next,
+  .slider-outside:hover .swiper-button-prev {
+    opacity: 1;
+  }
+
+  .slider-outside:hover .swiper-button-next {
+    transform: translateX(100px);
+  }
+
+  .slider-outside:hover .swiper-button-prev {
+    transform: translateX(-100px);
+  }
+</style>

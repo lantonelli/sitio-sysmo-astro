@@ -1,0 +1,82 @@
+---
+import ImageMod from "@/components/ImageMod.astro";
+import DynamicIcon from "@/helpers/DynamicIcon";
+import {
+  getLangFromUrl,
+  getTranslations,
+  slugSelector,
+} from "@/lib/utils/languageParser";
+import { markdownify, plainify } from "@/lib/utils/textConverter";
+import type { CollectionEntry, ContentEntryMap } from "astro:content";
+
+type Props = {
+  services: CollectionEntry<"services">[];
+};
+
+const { services } = Astro.props;
+const lang = getLangFromUrl(Astro.url);
+
+const { read_more } = await getTranslations(lang as keyof ContentEntryMap);
+---
+
+<div class="container">
+  <div class="row g-4">
+    {
+      services?.map((service) => {
+        const slugParts = service.id.split("/");
+        slugParts[0] = "services";
+        const modifiedSlug = slugParts.join("/");
+        service.id = modifiedSlug;
+
+        return (
+          <div class="lg:col-4 sm:col-6 mb-4 lg:mb-0">
+            <div class="box-shadow">
+              {service.data.image && (
+                <ImageMod
+                  src={service.data.image}
+                  class="bg-cover object-contain w-full"
+                  alt={service.data.title}
+                  format="webp"
+                  width={445}
+                  height={230}
+                />
+              )}
+              <div class="relative">
+                {service.data.icon && (
+                  <div class="bg-primary rounded-full w-[60px] h-[60px] flex justify-center items-center absolute -top-24 left-4">
+                    <DynamicIcon
+                      icon={service.data.icon}
+                      className="text-white text-3xl"
+                    />
+                  </div>
+                )}
+
+                <div class="p-4 bg-white">
+                  <h5>
+                    <a
+                      href={slugSelector(`/${service.id}`, lang)}
+                      class="text-text-dark hover:text-primary duration-200"
+                      set:html={markdownify(service.data.title)}
+                    />
+                  </h5>
+                  {service?.body && (
+                    <p
+                      class="mt-2 mb-4 line-clamp-2"
+                      set:html={plainify(service?.body)}
+                    />
+                  )}
+                  <a
+                    href={slugSelector(`/${service.id}`, lang)}
+                    class="btn btn-secondary btn-arrow"
+                  >
+                    {read_more}
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        );
+      })
+    }
+  </div>
+</div>
