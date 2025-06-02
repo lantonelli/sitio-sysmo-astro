@@ -1,7 +1,7 @@
 {
   "main": [
     { "name": "Inicio", "url": "/" },
-    { "name": "About", "url": "/about" },
+    { "name": "Nosotros", "url": "/about" },
     { "name": "Services", "url": "/services" },
     { "name": "blog", "url": "/blog" },
     { "name": "Team", "url": "/team" },
@@ -21,7 +21,7 @@
     }
   ],
   "footer": [
-    { "name": "About Us", "url": "/about" },
+    { "name": "Nosotros", "url": "/about" },
     { "name": "Privacy Policy", "url": "/privacy-policy" },
     { "name": "Contact Us", "url": "/contact" },
     { "name": "Services", "url": "/services" },
