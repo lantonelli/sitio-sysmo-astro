@@ -2,16 +2,16 @@
   "main": [
     { "name": "Inicio", "url": "/" },
     { "name": "Nosotros", "url": "/about" },
-    { "name": "Services", "url": "/services" },
-    { "name": "blog", "url": "/blog" },
-    { "name": "Team", "url": "/team" },
-    { "name": "Contact", "url": "/contact" },
+    { "name": "Servicios", "url": "/services" },
+    { "name": "Proyectos", "url": "/projects" },
+    { "name": "Contacto", "url": "/contact" },
     {
       "name": "Pages",
       "url": "",
       "hasChildren": true,
       "children": [
         { "name": "Projects", "url": "/projects" },
+        { "name": "blog", "url": "/blog" },
         { "name": "Authors", "url": "/authors" },
         { "name": "Terms of Service", "url": "/terms" },
         { "name": "Privacy Policy", "url": "/privacy-policy" },
@@ -22,9 +22,8 @@
   ],
   "footer": [
     { "name": "Nosotros", "url": "/about" },
-    { "name": "Privacy Policy", "url": "/privacy-policy" },
-    { "name": "Contact Us", "url": "/contact" },
-    { "name": "Services", "url": "/services" },
-    { "name": "Projects", "url": "/projects" }
+    { "name": "Contacto", "url": "/contact" },
+    { "name": "Servicios", "url": "/services" },
+    { "name": "Proyectos", "url": "/projects" }
   ]
 }
