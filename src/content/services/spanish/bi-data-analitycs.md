@@ -53,7 +53,7 @@ Revisamos la estructura, calidad y origen de tus datos actuales, detectamos opor
 <details>
 <summary><strong>¿Qué herramientas utilizan para BI?</strong></summary>
 
-Trabajamos con Power BI, Tableau, Metabase, Apache Superset y soluciones personalizadas en Python o R según el contexto técnico y presupuesto.
+Trabajamos con Power BI, Qlik, Metabase, Apache Superset y soluciones personalizadas en Python o R según el contexto técnico y presupuesto.
 </details>
 
 <details>

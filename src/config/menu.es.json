@@ -1,12 +1,15 @@
 {
   "main": [
-    { "name": "Inicio", "url": "/" },
-    { "name": "Nosotros", "url": "/about" },
-    { "name": "Servicios", "url": "/services" },
-    { "name": "Proyectos", "url": "/projects" },
-    { "name": "Contacto", "url": "/contact" },
+    { "name": "Inicio", "url": "/", "visible": true },
+    { "name": "Nosotros", "url": "/about", "visible": true },
+    { "name": "Servicios", "url": "/services", "visible": true },
+    { "name": "Proyectos", "url": "/projects", "visible": true },
+    { "name": "Clientes", "url": "/customers", "visible": true },
+    { "name": "Contacto", "url": "/contact", "visible": true },
+
     {
       "name": "Pages",
+      "visible": false,
       "url": "",
       "hasChildren": true,
       "children": [
@@ -19,11 +22,12 @@
         { "name": "404 Page", "url": "/404" }
       ]
     }
+
   ],
   "footer": [
-    { "name": "Nosotros", "url": "/about" },
-    { "name": "Contacto", "url": "/contact" },
-    { "name": "Servicios", "url": "/services" },
-    { "name": "Proyectos", "url": "/projects" }
+    { "name": "Nosotros", "url": "/about", "visible": true },
+    { "name": "Contacto", "url": "/contact", "visible": true },
+    { "name": "Servicios", "url": "/services", "visible": true },
+    { "name": "Proyectos", "url": "/projects", "visible": true }
   ]
 }

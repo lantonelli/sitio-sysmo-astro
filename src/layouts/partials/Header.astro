@@ -107,10 +107,11 @@ if (disabledLanguages.includes(lang)) {
           (menu: {
             name: string;
             url: string;
+            visible?: boolean;
             hasChildren: boolean;
             children: { name: string; url: string }[];
           }) => (
-            <>
+            menu.visible && <>
               {menu.hasChildren ? (
                 <li class="nav-link nav-dropdown group relative">
                   <span

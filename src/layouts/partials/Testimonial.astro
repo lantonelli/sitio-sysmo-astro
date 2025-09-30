@@ -28,14 +28,15 @@ const { testimonial } = Astro.props;
                     //  slider-item
                     <div class="swiper-slide slider-item">
                       <div class="text-center flex flex-col items-center">
-                        <ImageMod
-                          class="rounded-full mb-5 w-[70px] h-[70px]"
+                        <img class="mb-5 w-auto h-[100px] rounded-xs" src={t.avatar} alt="client" />
+                        {/* <ImageMod
+                          class="mb-5 w-auto h-[70px]"
                           src={t.avatar}
                           alt="client"
-                          width={70}
-                          height={70}
-                          format="webp"
-                        />
+                          //width={70}
+                          //height={70}
+                          format="png"
+                        /> */}
                         <div class="relative">
                           <div
                             class="text-center md:pt-4"

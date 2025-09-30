@@ -89,9 +89,9 @@ funfacts:
       icon: "FaRegFaceSmile"
 
     # fanfacts item loop
-    - name: "Awards Win"
-      count: "250"
-      icon: "FaAward"
+    # - name: "Awards Win"
+    #   count: "250"
+    #   icon: "FaAward"
 
 
 ########## feature ##########
