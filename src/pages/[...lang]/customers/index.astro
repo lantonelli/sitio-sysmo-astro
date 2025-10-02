@@ -1,5 +1,5 @@
 ---
-import ProjectCard from "@/components/ProjectCard.astro";
+import CustomerCard from "@/components/CustomerCard.astro";
 import config from "@/config/config.json";
 import Base from "@/layouts/Base.astro";
 import { getListPage, getSinglePage } from "@/lib/contentParser.astro";
@@ -22,18 +22,18 @@ if (!lang) {
   lang = default_language;
 }
 
-const projectIndex = await getListPage(
-  "projects",
+const customerIndex = await getListPage(
+  "customers",
   lang as keyof ContentEntryMap,
 );
-const projects = await getSinglePage("projects", lang as keyof ContentEntryMap);
+const customers = await getSinglePage("customers", lang as keyof ContentEntryMap);
 ---
 
-<Base {...projectIndex[0].data}>
-  <PageHeader {...projectIndex[0].data} />
+<Base {...customerIndex[0].data}>
+  <PageHeader {...customerIndex[0].data} />
   <section class="section">
     <div class="container">
-      <ProjectCard projectIndex={projectIndex[0]} projects={projects} />
+      <CustomerCard projectIndex={customerIndex[0]} customers={customers} />
     </div>
   </section>
 </Base>

@@ -1,0 +1,227 @@
+---
+import { getLangFromUrl, slugSelector } from "@/lib/utils/languageParser";
+import { markdownify } from "@/lib/utils/textConverter";
+import ImageMod from "./ImageMod.astro";
+const { customers } = Astro.props;
+
+const lang = getLangFromUrl(Astro.url);
+const { pathname } = Astro.url;
+
+const groups = [
+  ...new Set(
+    customers
+      .filter((customer: { data: { category?: string } }) => customer.data.category)
+      .map((customer: { data: { category: string } }) =>
+        customer.data.category.toLocaleLowerCase()
+      )
+  ),
+];
+---
+
+<div>
+  <ul
+    class={`flex justify-center items-center flex-wrap mb-7 ${pathname === `/${lang}` || pathname === "/" ? "hidden" : "shuffle-filter"}`}
+  >
+    <li class="selected" data-target="all">
+      <button
+        type="button"
+        class={`m-3 inline-block text-text-dark py-3 font-secondary uppercase font-medium text-lg hover:text-primary cursor-pointer`}
+      >
+        All
+      </button>
+    </li>
+    {
+      groups.map((group) => (
+        <li data-target={group}>
+          <button
+            type="button"
+            class={`m-3 inline-block text-text-dark py-3 font-secondary uppercase font-medium text-lg hover:text-primary cursor-pointer`}
+          >
+            {group}
+          </button>
+        </li>
+      ))
+    }
+  </ul>
+
+  <ul
+    class={`row shuffle-container ${pathname === `/${lang}` || pathname === "/" ? "g-1" : "g-4"}`}
+  >
+    {
+      customers.map((customer: any) => {
+        const slugParts = customer.id.split("/");
+        slugParts[0] = "customers";
+        const modifiedSlug = slugParts.join("/");
+        customer.id = modifiedSlug;
+        return (
+          <li
+            class="lg:col-3 sm:col-6"
+            data-groups={`["${customer?.data?.category?.toLocaleLowerCase() || 'uncategorized'}","all"]`}
+          >
+            <div class="project-item mb-10">
+              <div class="relative mb-4 overflow-hidden">
+                <ImageMod
+                  src={customer.data.image}
+                  alt="project thumb"
+                  class="w-full object-cover"
+                  width={473}
+                  height={473}
+                  format="webp"
+                />
+                <div class="hover-overlay">
+                  <a href={customer.data.image} class="venobox">
+                    <i class="uni-plus" />
+                  </a>
+                </div>
+              </div>
+              {/* project-info  */}
+              <div class="ms-4">
+                <h6
+                  class="text-primary text-base mb-2"
+                  set:html={markdownify(customer.data.category || 'Uncategorized')}
+                />
+                <h5 class="text-text-dark hover:text-primary duration-200">
+                  <a
+                    href={slugSelector(`${customer.id}`, lang)}
+                    set:html={markdownify(customer.data.title)}
+                  />
+                </h5>
+              </div>
+            </div>
+          </li>
+        );
+      })
+    }
+  </ul>
+
+  <!-- Modal Structure -->
+  <div
+    id="image-modal"
+    class="hidden fixed inset-0 z-50 bg-black/80 flex items-center justify-center"
+  >
+    <div class="rounded-lg">
+      <button
+        id="close-modal"
+        class="absolute top-0 right-0 text-white bg-black py-2 px-4"
+      >
+        X
+      </button>
+      <img
+        id="modal-image"
+        src=""
+        alt="project thumb"
+        class="max-w-[600px] object-cover"
+      />
+    </div>
+  </div>
+</div>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeModal = document.getElementById("close-modal");
+
+    if (!modal || !modalImage || !closeModal) {
+      console.warn("Modal elements not found in the DOM");
+      return;
+    }
+
+    document.querySelectorAll(".venobox").forEach((venobox) => {
+      venobox.addEventListener("click", (event) => {
+        event.preventDefault();
+        const imageSrc = venobox.getAttribute("href");
+        if (imageSrc) {
+          modalImage.setAttribute("src", imageSrc);
+          modal.classList.remove("hidden");
+        }
+      });
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        modal.classList.add("hidden");
+      }
+    });
+  });
+</script>
+
+<script>
+  import Shuffle from "shufflejs";
+
+  document.addEventListener("astro:page-load", () => {
+    const modal = document.getElementById("image-modal");
+    const modalImage = document.getElementById("modal-image");
+    const closeModal = document.getElementById("close-modal");
+
+    if (!modal || !modalImage || !closeModal) {
+      console.warn("Modal elements not found in the DOM");
+      return;
+    }
+
+    document.querySelectorAll(".venobox").forEach((venobox) => {
+      venobox.addEventListener("click", (event) => {
+        event.preventDefault();
+        const imageSrc = venobox.getAttribute("href");
+        if (imageSrc) {
+          modalImage.setAttribute("src", imageSrc);
+          modal.classList.remove("hidden");
+        }
+      });
+    });
+
+    closeModal.addEventListener("click", () => {
+      modal.classList.add("hidden");
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        modal.classList.add("hidden");
+      }
+    });
+
+    // Shuffle and button active state logic
+    const element = document.querySelector(".shuffle-container");
+
+    if (element) {
+      let shuffleInstance = new Shuffle(element as HTMLElement, {
+        itemSelector: "li",
+      });
+
+      shuffleInstance.filter("all");
+
+      const filter = document.querySelector(".shuffle-filter");
+      const filterLists = Array.from(filter?.children || []);
+
+      filterLists.forEach((list) => {
+        const button = list.querySelector("button");
+        if (list.classList.contains("selected")) {
+          button?.classList.add("text-primary");
+          button?.classList.remove("text-text-dark");
+        }
+
+        button?.addEventListener("click", function () {
+          filterLists.forEach((list) => {
+            list.classList.remove("selected");
+            const btn = list.querySelector("button");
+            btn?.classList.remove("text-primary");
+            btn?.classList.add("text-text-dark");
+          });
+
+          this.parentElement?.classList.add("selected");
+          this.classList.add("text-primary");
+          this.classList.remove("text-text-dark");
+
+          const keyword = list.getAttribute("data-target");
+          shuffleInstance.filter(keyword as string);
+        });
+      });
+    } else {
+      // console.warn("shuffle-container not found in the DOM.");
+    }
+  });
+</script>

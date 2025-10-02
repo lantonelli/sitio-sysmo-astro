@@ -13,18 +13,18 @@ const { contact_form_action } = config.params;
 export async function getStaticPaths() {
   const paths = await Promise.all(
     supportedLang.map(async (lang) => {
-      const projects = await getSinglePage(
-        "projects",
+      const customers = await getSinglePage(
+        "customers",
         lang as keyof ContentEntryMap
       );
 
-      return projects.map((project) => ({
+      return customers.map((customer) => ({
         params: {
           lang: lang || undefined,
-          single: project.id.split("/").pop(),
+          single: customer.id.split("/").pop(),
         },
         props: {
-          project,
+          customer,
         },
       }));
     })
@@ -32,7 +32,7 @@ export async function getStaticPaths() {
   return paths.flat();
 }
 
-const { project } = Astro.props;
+const { customer } = Astro.props;
 const { lang } = Astro.params;
 
 const {
@@ -44,9 +44,9 @@ const {
   category,
   date,
   status,
-} = project.data;
+} = customer.data;
 
-const { Content } = await render(project);
+const { Content } = await render(customer);
 
 const {
   quick_contact,

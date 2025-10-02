@@ -1,11 +1,11 @@
 ---
-title: "Gestión de recursos"
+title: "Sistema de Facturación electrónica"
 date: 2024-02-07T10:47:55+06:00
-description: "Sistema de gestión para pymes"
-image: "/images/project/gestion-recursos.png"
-client: "Varios"
-category: "Gestión para PyMES"
-status: "Listo para usar"
+description: "Interfaz para enviar y gestionar CAE por medio de Interfacturas"
+image: "/images/customers/huawei.png"
+client: "Huawei Argentina"
+category: "Facturación"
+status: "En Producción"
 ---
 # Sysmo Gestión de Recursos
 

@@ -318,6 +318,29 @@ const callToActionSchema = defineCollection({
   }),
 });
 
+// Customers schema
+const customersCollection = defineCollection({
+  loader: glob({ pattern: "**/*.{md,mdx}", base: "src/content/customers" }),
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string().optional(),
+    content: z.string().optional(),
+    image: z.string().optional(),
+    draft: z.boolean().default(false),
+    category: z.string().optional(),
+    client: z.string().optional(),
+    status: z.string().optional(),
+    date: z.date().optional(),
+    description: z.string().optional(),
+    bg_image: z.string().optional(),
+    button: z.object({
+      enable: z.boolean().default(false),
+      label: z.string().optional(),
+      link: z.string().optional(),
+    }).optional(),
+  }),
+});
+
 // Export collections
 export const collections = {
   homepage: homepageCollection,
@@ -332,4 +355,5 @@ export const collections = {
   content: contentSchema,
   testimonials: testimonialCollection,
   callToAction: callToActionSchema,
+  customers: customersCollection,
 };
