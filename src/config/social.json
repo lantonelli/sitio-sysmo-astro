@@ -1,19 +1,9 @@
 {
   "main": [
     {
-      "name": "facebook",
-      "icon": "FaFacebook",
-      "link": "https://www.facebook.com/sysmoconsultora"
-    },
-    {
       "name": "twitter",
       "icon": "FaTwitter",
       "link": "https://x.com/sysmosrl"
-    },
-    {
-      "name": "github",
-      "icon": "FaGithub",
-      "link": "https://www.github.com/"
     },
     {
       "name": "linkedin",

@@ -55,7 +55,7 @@ const groups = [
         customer.id = modifiedSlug;
         return (
           <li
-            class="lg:col-3 sm:col-6"
+            class="lg:col-2 sm:col-4"
             data-groups={`["${customer?.data?.category?.toLocaleLowerCase() || 'uncategorized'}","all"]`}
           >
             <div class="project-item mb-10">
@@ -64,9 +64,9 @@ const groups = [
                   src={customer.data.image}
                   alt="project thumb"
                   class="w-full object-cover"
-                  width={473}
-                  height={473}
-                  format="webp"
+                  width={400}
+                  height={400}
+                  format="png"
                 />
                 <div class="hover-overlay">
                   <a href={customer.data.image} class="venobox">
@@ -80,7 +80,7 @@ const groups = [
                   class="text-primary text-base mb-2"
                   set:html={markdownify(customer.data.category || 'Uncategorized')}
                 />
-                <h5 class="text-text-dark hover:text-primary duration-200">
+                <h5 class="text-text-dark hover:text-primary duration-200 h-[50px]">
                   <a
                     href={slugSelector(`${customer.id}`, lang)}
                     set:html={markdownify(customer.data.title)}
