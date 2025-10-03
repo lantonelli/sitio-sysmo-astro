@@ -1,8 +1,8 @@
 ---
-title: "Sistema de Facturación electrónica"
+title: "Sistema de Facturación"
 date: 2024-02-07T10:47:55+06:00
 description: "Interfaz para enviar y gestionar CAE por medio de Interfacturas"
-image: "/images/customers/micro.jpg"
+image: "/images/customers/micro.png"
 client: "MICRO Automación"
 category: "Facturación"
 status: "En Producción"

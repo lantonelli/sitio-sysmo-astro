@@ -1,10 +1,10 @@
 ---
-title: "Desarrollo de software, desarrollo de App y mantenimiento de sistemas propios"
+title: "Sistema Deportivo"
 date: 2024-02-07T10:47:55+06:00
 description: "Desarrollo de sistema contable, desarrollo de aplicación móvil para jugadores, mantenimiento de sistemas propios de la Asociación"
 image: "/images/customers/AAT.png"
 client: "Asociación Argentina de Tenis"
-category: "Facturación - Aplicaciones móviles - Consultoría y soporte"
+category: "Consultoría de sistemas"
 status: "En Producción"
 ---
 # Sysmo desarrollos

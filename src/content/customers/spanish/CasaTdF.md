@@ -2,7 +2,7 @@
 title: "App Casa de Tierra del Fuego"
 date: 2024-02-07T10:47:55+06:00
 description: "Desarrollo de aplicación móvil para la Casa de Tierra del Fuego en Buenos Aires"
-image: "/images/customers/tdf.png"
+image: "/images/customers/casatierradelfuego.png"
 client: "Casa de Tierra del fuego"
 category: "Sector Público"
 status: "Finalizado"

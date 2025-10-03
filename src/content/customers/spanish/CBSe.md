@@ -1,8 +1,8 @@
 ---
-title: "Modificaciones y soporte de sitio web"
+title: "Sitio web institucional"
 date: 2024-02-07T10:47:55+06:00
 description: "Modificaciones y soporte de sitio web institucional https://www.cbse.com.ar"
-image: "/images/customers/cbse.png"
+image: "/images/customers/CBSe.png"
 client: "CBSé"
 category: "Desarrollo sitio web"
 status: "En Producción"

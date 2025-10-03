@@ -1,8 +1,8 @@
 ---
-title: "Desarrollo módulos y APIs para Sistema Integrado de Casos de Violencia"
+title: "Sist Int de Casos de Violencia"
 date: 2024-02-07T10:47:55+06:00
 description: "Fortalecimiento del Sistema Integrado de Casos de Violencia por Motivos de Género"
-image: "/images/customers/ministerioGenero.png"
+image: "/images/customers/genero.png"
 client: "Ministerio de las Mujeres, Géneros y Diversidad de la Nación"
 category: "Sector Público"
 status: "Finalizado"

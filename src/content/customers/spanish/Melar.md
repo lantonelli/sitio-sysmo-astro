@@ -1,5 +1,5 @@
 ---
-title: "Automatización de procesos realizados en planillas Excel"
+title: "Automatización de procesos"
 date: 2024-02-07T10:47:55+06:00
 description: "Desarrollo de software para automatizar procesos manuales"
 image: "/images/customers/melar.png"

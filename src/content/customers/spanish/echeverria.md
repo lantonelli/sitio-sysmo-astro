@@ -2,7 +2,7 @@
 title: "NOS.OTRAS"
 date: 2024-02-07T10:47:55+06:00
 description: "Desarrollo de aplicación móvil para las mujeres de Esteban Echeverría"
-image: "/images/customers/echeverria.png"
+image: "/images/customers/estebanecheverria.png"
 client: "Municipio de Esteban Echeverría"
 category: "Sector Público"
 status: "Finalizado"
