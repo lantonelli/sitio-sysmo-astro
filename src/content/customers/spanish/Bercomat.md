@@ -2,7 +2,7 @@
 title: "Sistema de Facturación electrónica"
 date: 2024-02-07T10:47:55+06:00
 description: "Interfaz para enviar y gestionar CAE"
-image: "/images/customers/bercomat.png"
+image: "/images/customers/bercomat.jpg"
 client: "Bercomat"
 category: "Facturación"
 status: "En Producción"
