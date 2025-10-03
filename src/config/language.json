@@ -10,11 +10,5 @@
     "languageCode": "en",
     "contentDir": "english",
     "weight": 2
-  },
-  {
-    "languageName": "Fr",
-    "languageCode": "fr",
-    "contentDir": "french",
-    "weight": 3
   }
 ]

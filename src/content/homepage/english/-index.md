@@ -4,42 +4,42 @@ hero_slider:
   enable: true
   slider_item:
     # slider item
-    - subtitle: "We are here to"
-      title: "Planning Business"
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - subtitle: "We build"
+      title: "Solutions that connect"
+      content: "We support you with technologies that act as growth enablers"
       bg_image: "/images/slider/banner-1.jpg"
       button:
-        enable: true
+        enable: false
         label: "more details"
         link: "/about"
 
     # slider item
-    - subtitle: "We are here to"
-      title: "Planning Business"
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - subtitle: "We build"
+      title: "Solutions that connect"
+      content: "We support you with technologies that act as growth enablers"
       bg_image: "/images/slider/banner-2.jpg"
       button:
-        enable: true
+        enable: false
         label: "more details"
         link: "/about"
 
     # slider item
-    - subtitle: "We are here to"
-      title: "Planning Business"
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - subtitle: "We build"
+      title: "Solutions that connect"
+      content: "We support you with technologies that act as growth enablers"
       bg_image: "/images/slider/banner-3.jpg"
       button:
-        enable: true
+        enable: false
         label: "more details"
         link: "/about"
 
     # slider item
-    - subtitle: "We are here to"
-      title: "Planning Business"
-      content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    - subtitle: "We build"
+      title: "Solutions that connect"
+      content: "We support you with technologies that act as growth enablers"
       bg_image: "/images/slider/banner-4.jpg"
       button:
-        enable: true
+        enable: false
         label: "more details"
         link: "/about"
 
@@ -49,71 +49,71 @@ banner_feature:
   # Max use 4 item
   feature_item:
     # banner feature item loop
-    - name: "Business Solution"
+    - name: "Systems"
       icon: "FaGem"
-      content: "Lorem ipsum dolor sit amet constur adipelit sed."
+      content: "We design and implement custom software so your operations become more agile and profitable. Tell us your challenge and we’ll build the exact solution your company needs."
 
     # banner feature item loop
-    - name: "Market Research"
+    - name: "Mobile applications"
       icon: "FaChartBar"
-      content: "Lorem ipsum dolor sit amet constur adipelit sed."
+      content: "We create native apps for Android and iOS that boost interaction with your customers and teams. We guide you from idea to launch and continuous evolution."
 
     # banner feature item loop
-    - name: "Business Strategy"
+    - name: "Data analytics"
       icon: "FaLightbulb"
-      content: "Lorem ipsum dolor sit amet constur adipelit sed."
+      content: "We turn your data into actionable insight with dashboards, predictive models, and automation. See the present, anticipate scenarios, and decide with real‑time evidence."
 
     # banner feature item loop
-    - name: "Speed Optimization"
+    - name: "Consulting"
       icon: "FaGear"
-      content: "Lorem ipsum dolor sit amet constur adipelit sed."
+      content: "We help you adopt technology while optimizing processes, costs, and digital culture. We assess, prioritize, and define a clear action plan for fast, sustainable results."
 
 ######### funfacts ########
 funfacts:
   enable: true
   funfacts_item:
     # fanfacts item loop
-    - name: "project done"
-      count: "50"
-      icon: "FaBullseye"
-
-    # fanfacts item loop
-    - name: "Years Experience"
-      count: "25"
+    - name: "Years of experience"
+      count: "15"
       icon: "FaCalendarDays"
 
     # fanfacts item loop
-    - name: "Awards Win"
-      count: "250"
-      icon: "FaAward"
+    - name: "Systems and solutions"
+      count: "50"
+      icon: "FaBullseye"
+      
+    # fanfacts item loop
+    - name: "Satisfied clients"
+      count: "200"
+      icon: "FaRegFaceSmile"
 
     # fanfacts item loop
-    - name: "Happy Coustomers"
-      count: "500"
-      icon: "FaRegFaceSmile"
+    # - name: "Awards Win"
+    #   count: "250"
+    #   icon: "FaAward"
 
 ########## feature ##########
 feature:
   enable: true
-  subtitle: "Why Choose Us"
-  title: "Why They Choose Bexar"
+  subtitle: "Why choose us"
+  title: "Why choose Sysmo"
   image: "/images/feature/feature.png"
-  content: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt ut labore."
+  content: "At Sysmo, we’ve spent 15+ years building solutions that work from day one and grow with your business. We focus on measurable results, clear processes, and straightforward collaboration."
   feature_item:
     # feature item loop
-    - name: "Creative Design"
+    - name: "Tailor‑made solutions"
       icon: FaSnowflake
-      content: "Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia."
+      content: "We design and integrate cloud, web, and mobile software tailored to your current and future processes."
 
     # feature item loop
-    - name: "Pixel Perfect Coding"
+    - name: "Fit‑for‑purpose architecture"
       icon: FaCode
-      content: "Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia."
+      content: "We apply the right technology to the right problem."
 
 ######## blog #######
 latest_news:
   enable: true
   show_item: 3
-  title: "Learn From Bexar"
+  title: "Learn from Sysmo"
   sub_title: "Latest News"
 ---

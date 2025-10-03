@@ -11,17 +11,17 @@ status: "En Producción"
 
 ---
 
-## 🎯 Problemática planteada
+## ❌ Problemática planteada
 
 El circuito de generación de certificado de libre deuda en el **municipio de Berazategui** era realizado en papel, secuencial, y generaba largos tiempos de demora.
 
-## 🎯 Solución
+## ✅ Solución
 
 **Sysmo** desarrolló e implementó un sistema web que permite el ingreso de trámite por parte de los escribanos, y la intervención concurrente de las distintas áreas (Catastro, Tasas Generales, Obras Particulares, etc.). Esto optimiza el trabajo, reduce significativamente los tiempos y permite a cada sector tomar conocimiento del estado de la solicitud.
 
 ---
 
-## 🧩 Beneficios
+## 💪 Beneficios
 
 - Reducción de tiempos en los procesos administrativos
 

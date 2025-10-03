@@ -1,11 +1,11 @@
 ---
-subtitle: "Case Studies"
-title: "Case Study"
-description: "this is meta description"
-meta_title: "Case Study"
+subtitle: "Our projects"
+title: "Our projects"
+description: "Throughout Sysmo's history, we've had several success stories."
+meta_title: "Our projects"
 bg_image: "images/backgrounds/page-title.jpg"
 button:
   enable: true
-  label: "more projects"
+  label: "see more"
   link: "/projects"
 ---
