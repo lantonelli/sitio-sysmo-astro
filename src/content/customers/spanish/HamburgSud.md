@@ -31,5 +31,3 @@ Posteriormente se desarrolló, también para Argentina, Uruguay y Paraguay, un s
 - Mayor descentralización de tareas en las distintas terminales
 
 - Estandarización de servicios en la Región (LATAM)
-
-- Importación automática de archivos de clientes y vendedores desde SAP
