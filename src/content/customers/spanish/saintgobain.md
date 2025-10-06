@@ -4,7 +4,7 @@ date: 2024-02-07T10:47:55+06:00
 description: "Sitio web institucional con funcionalidades incorporadas"
 image: "/images/customers/saintgobain.png"
 client: "Saint-Gobain Argentina"
-category: "Sitio web"
+category: "Desarrollo Sitio web"
 status: "Finalizado"
 ---
 # Portal Web Saint-Gobain Argentina
