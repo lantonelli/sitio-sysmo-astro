@@ -1,6 +1,6 @@
 ---
 title: "Sistema de relevamiento en Moreno"
-date: 2024-02-07T10:47:55+06:00
+date: 2023-03-01T10:47:55+06:00
 description: "Desarrollo de sistema para relevamiento de terrenos y edificaciones en el municipio"
 image: "/images/customers/Lujan.png"
 client: "Municipio de Moreno"
