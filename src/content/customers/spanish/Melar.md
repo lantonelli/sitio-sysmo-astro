@@ -1,6 +1,6 @@
 ---
-title: "Automatización de procesos"
-date: 2024-02-07T10:47:55+06:00
+title: "Sistema para automatizar procesos"
+date: 2019-09-01T10:47:55+06:00
 description: "Desarrollo de software para automatizar procesos manuales"
 image: "/images/customers/melar.png"
 client: "Melar"
@@ -17,7 +17,7 @@ La empresa **Melar** realizaba una serie de tareas vinculadas a su sistema de ge
 
 ## 🎯 Solución
 
-**Sysmo** realizó un análisis de los distintos archivos operados, y desarrolló un software que permitió automatizar los procesos y automatizarlos.
+**Sysmo** realizó un análisis de los distintos archivos operados, y desarrolló un software que permitió automatizar los procesos y agilizar los tiempos.
 
 ---
 
