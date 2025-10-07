@@ -61,6 +61,11 @@ const {
   date: Tdate,
   status: Tstatus,
 } = await getTranslations(lang as keyof ContentEntryMap);
+
+// Read feedback from PHP handler redirects (e.g., ?success=1&message=...)
+const params = Astro.url.searchParams;
+const formSuccess = params.get('success');
+const formMessage = params.get('message');
 ---
 
 <Base
@@ -157,13 +162,21 @@ const {
           <!-- quick contact -->
           <div class="bg-white px-8 py-10 box-shadow mb-12 sticky top-28">
             <h5 class="mb-5">{quick_contact}</h5>
-            <form action={contact_form_action}>
+            {formMessage && (
+              <div class={`mb-5 border p-3 rounded ${formSuccess === '1' || formSuccess === 'true' ? 'bg-green-50 border-green-200 text-green-700' : 'bg-red-50 border-red-200 text-red-700'}`}>
+                {formMessage}
+              </div>
+            )}
+            <form action={contact_form_action} method="POST">
+              <!-- honeypot field to reduce spam -->
+              <input type="text" name="website" tabindex="-1" autocomplete="off" class="hidden" aria-hidden="true" />
               <input
                 type="text"
                 name="name"
                 id="name"
                 class="form-control form-control-sm w-full border-0 rounded-0 box-shadow mb-3"
                 placeholder={placeholder_name}
+                required
               />
               <input
                 type="email"
@@ -171,6 +184,7 @@ const {
                 id="mail"
                 class="form-control form-control-sm w-full border-0 rounded-0 box-shadow mb-3"
                 placeholder={placeholder_email}
+                required
               />
               <input
                 type="tel"
@@ -190,7 +204,8 @@ const {
                 name="message"
                 id="message"
                 class="form-control form-control-sm w-full border-0 rounded-0 box-shadow mb-3 py-3 px-4"
-                placeholder={placeholder_message}></textarea>
+                placeholder={placeholder_message}
+                required></textarea>
               <button type="submit" value="send" class="btn btn-primary">
                 {send_message}
               </button>

@@ -25,7 +25,7 @@
   },
 
   "params": {
-    "contact_form_action": "#",
+    "contact_form_action": "/contact.php",
     "address": "",
     "phone": "+54 9 11 6577-7390",
     "email": "info@sysmo.com.ar",

@@ -1,11 +1,11 @@
 {
   "main": [
-    { "name": "Inicio", "url": "/", "visible": true },
-    { "name": "Nosotros", "url": "/about", "visible": true },
-    { "name": "Servicios", "url": "/services", "visible": true },
-    { "name": "Proyectos", "url": "/projects", "visible": true },
-    { "name": "Clientes", "url": "/customers", "visible": true },
-    { "name": "Contacto", "url": "/contact", "visible": true },
+    { "name": "Home", "url": "/", "visible": true },
+    { "name": "About us", "url": "/about", "visible": true },
+    { "name": "Services", "url": "/services", "visible": true },
+    { "name": "Projects", "url": "/projects", "visible": true },
+    { "name": "Customers", "url": "/customers", "visible": true },
+    { "name": "Contact us", "url": "/contact", "visible": true },
 
     {
       "name": "Pages",
@@ -25,9 +25,9 @@
 
   ],
   "footer": [
-    { "name": "Nosotros", "url": "/about", "visible": true },
-    { "name": "Contacto", "url": "/contact", "visible": true },
-    { "name": "Servicios", "url": "/services", "visible": true },
-    { "name": "Proyectos", "url": "/projects", "visible": true }
+    { "name": "About us", "url": "/about", "visible": true },
+    { "name": "Contact us", "url": "/contact", "visible": true },
+    { "name": "Services", "url": "/services", "visible": true },
+    { "name": "Projects", "url": "/projects", "visible": true }
   ]
 }

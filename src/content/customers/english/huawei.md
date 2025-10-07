@@ -1,7 +1,7 @@
 ---
 title: "Electronic Invoicing System"
-date: 2024-02-07T10:47:55+06:00
-description: "Interface to send and manage CAE through Interfacturas"
+date: 2017-04-01T10:47:55+06:00
+description: "Interface to send and manage CAE via Interfacturas"
 image: "/images/customers/huawei.png"
 client: "Huawei Argentina"
 category: "Invoicing"
@@ -13,17 +13,17 @@ status: "In Production"
 
 ## 🎯 Challenge
 
-**Huawei** needed a tool to manage its invoicing in Argentina electronically, considering all tax deductions applied in each province according to the criteria of the different jurisdictions.
+**Huawei** needed a tool to manage its invoicing in Argentina electronically, considering all tax deductions applied in each province according to each jurisdiction's criteria.
 
 ## 🎯 Solution
 
-**Sysmo Electronic Invoicing** is a system that enables **electronic invoicing**, connecting with ARCA. The system also calculates gross income tax rates based on the criteria applied in the different provinces of Argentina and generates relevant reports for business management.
+**Sysmo Electronic Invoicing** is a system that enables **electronic invoicing**, connecting with ARCA. The system also calculates Gross Income tax rates based on provincial criteria across Argentina and generates relevant management reports.
 
 ---
 
 ## 🧩 Benefits
 
 - Online invoicing by connecting to ARCA
-- Applicable in all 24 jurisdictions in Argentina
+- Applicable in the 24 jurisdictions of Argentina
 - Validation and centralization of invoicing information in an integrated tool
 - Reports to support decision-making

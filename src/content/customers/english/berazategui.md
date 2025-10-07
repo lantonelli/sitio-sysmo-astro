@@ -1,7 +1,7 @@
 ---
 title: "Debt Clearance System"
-date: 2024-02-07T10:47:55+06:00
-description: "Web system to manage the debt clearance procedure and streamline collaboration between notaries and municipal areas"
+date: 2025-09-01T10:47:55+06:00
+description: "Web system for generating the debt clearance procedure"
 image: "/images/customers/berazategui.png"
 client: "Municipality of Berazategui"
 category: "Public Sector"
@@ -13,18 +13,18 @@ status: "In Production"
 
 ## ❌ Challenge
 
-The process for issuing the debt clearance certificate in the **Municipality of Berazategui** was paper-based and sequential across areas, which caused significant delays and limited visibility into the status of each request.
+The process for issuing the debt clearance certificate in the **Municipality of Berazategui** was paper-based, sequential, and resulted in long delays.
 
 ## ✅ Solution
 
-**Sysmo** designed and implemented a web system that allows notaries to submit requests online and enables concurrent intervention of the different municipal areas (Cadastre, General Taxes, Building Works, among others). The digitalized workflow reduces processing time, avoids rework, and provides end-to-end traceability for each request.
+**Sysmo** developed and implemented a web system that allows notaries to submit requests online and enables concurrent intervention of different areas (Cadastre, General Taxes, Building Works, etc.). This optimizes the work, significantly reduces processing times, and provides each sector with visibility into the status of the request.
 
 ---
 
 ## 💪 Benefits
 
-- Shorter processing times for administrative procedures
-- Concurrent work between areas, with real-time visibility of each request's status
+- Reduced processing times in administrative procedures
+- Optimized simultaneous work across areas, with visibility into the status of each request
 - Digitalization and centralization of all documentation related to the procedure
-- Better coordination between the municipality and notaries
-- Greater transparency and traceability throughout the entire workflow
+- Coordination between the municipality and notaries
+- Visibility and transparency throughout the entire workflow

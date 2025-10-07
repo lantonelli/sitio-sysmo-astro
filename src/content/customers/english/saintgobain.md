@@ -1,10 +1,10 @@
 ---
 title: "Web Portal Development"
-date: 2024-02-07T10:47:55+06:00
+date: 2016-07-01T10:47:55+06:00
 description: "Corporate website with built-in functionality"
 image: "/images/customers/saintgobain.png"
 client: "Saint-Gobain Argentina"
-category: "Website"
+category: "Website Development"
 status: "Completed"
 ---
 # Saint-Gobain Argentina Web Portal
@@ -13,7 +13,7 @@ status: "Completed"
 
 ## 🎯 Challenge
 
-**Saint-Gobain Argentina** needed a corporate web portal for the Group that also incorporated several features related to customers, suppliers, business lines, and sales teams.
+**Saint-Gobain Argentina** needed a corporate web portal for the Group that also incorporated features related to customers, suppliers, business lines, and sales teams.
 
 ## 🎯 Solution
 
@@ -23,8 +23,8 @@ status: "Completed"
 
 ## 🧩 Benefits
 
-- Publication of customer invoices and documents
+- Publication of customer documents
 - Payment of outstanding invoices via automatic connection to Interbanking
-- Customer advance payment support
-- Document viewing for both customers and suppliers
+- Advance payments by customers
+- Document viewing for customers and suppliers
 - Automatic import of files for customers and sales teams from SAP

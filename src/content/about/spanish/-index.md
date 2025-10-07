@@ -16,11 +16,8 @@ philosophy_section:
         - "Humildad"
         - "Confianza"
     - title: "Nuestro core"
-      content: "Soluciones Cloud Automatización de procesos."
+      content: "La tecnología a tu servicio."
       list:
-        - "Apoyando Small and Midsize business (SMB)"
-        - "Foco en transformación y reinvención"
-        - "La tecnología como habilitadora de crecimiento"
         - "Soluciones Cloud"
         - "Automatización de procesos"
         - "Web3"
@@ -30,7 +27,10 @@ philosophy_section:
     - title: "Nuestra filosofía"
       content: "Te apoyamos con tecnologías que funcionen como habilitadoras de crecimiento."
       list:
-        - "Automatización de procesos"
+        - Apoyando Small and Midsize business (SMB)
+        - Foco en transformación y reinvención
+        - La tecnología como habilitadora de crecimiento
+
 
 about_section:
   enable: true

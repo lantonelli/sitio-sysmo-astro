@@ -1,8 +1,8 @@
 ---
 title: "NOS.OTRAS"
-date: 2024-02-07T10:47:55+06:00
+date: 2020-02-15T10:47:55+06:00
 description: "Mobile application for women in Esteban Echeverría"
-image: "/images/customers/echeverria.png"
+image: "/images/customers/estebanecheverria.png"
 client: "Municipality of Esteban Echeverría"
 category: "Public Sector"
 status: "Completed"
