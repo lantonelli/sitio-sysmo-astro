@@ -1,6 +1,6 @@
 ---
-title: "Desarrollo de Interfaz para notificaciones BCRA y sistema de gestión de recursos"
-date: 2024-02-07T10:47:55+06:00
+title: "Interfaz BCRA - Gestión de recursos"
+date: 2023-05-15T10:47:55+06:00
 description: "Desarrollo de Interfaz para notificaciones BCRA y sistema de gestión de recursos"
 image: "/images/customers/Maersk.png"
 client: "Maersk Line"
