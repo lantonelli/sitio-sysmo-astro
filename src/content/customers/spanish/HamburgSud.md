@@ -4,7 +4,7 @@ date: 2017-03-01T10:47:55+06:00
 description: "Desarrollo Sitio web "
 image: "/images/customers/HamburgSud.png"
 client: "Hamburg Sud"
-category: "Sitio web"
+category: "Desarrollo Sitio web"
 status: "En Producción"
 ---
 # Portal Web Hamburg Sud
