@@ -1,6 +1,6 @@
 ---
 title: "Desarrollo de CRM"
-date: 2024-02-07T10:47:55+06:00
+date: 2023-07-01T10:47:55+06:00
 description: "Desarrollo e implementación de sistema para gestión de clientes (CRM)"
 image: "/images/customers/grupozenkai.png"
 client: "Grupo Zenkai"
