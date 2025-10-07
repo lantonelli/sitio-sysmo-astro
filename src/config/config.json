@@ -1,7 +1,7 @@
 {
   "site": {
     "title": "Sysmo",
-    "base_url": "http://new.sysmo.com.ar",
+    "base_url": "https://sysmo.com.ar",
     "base_path": "/",
     "trailing_slash": false,
     "favicon": "/images/favicon.png",
@@ -50,6 +50,7 @@
   "metadata": {
     "meta_author": "Sysmo",
     "meta_image": "/images/og-image.png",
-    "meta_description": "Bexer is a SAAS theme powered by Astro"
+    "meta_description": "Sysmo - Consultora de software a medida. Desarrollamos soluciones tecnológicas para empresas, gobiernos y organizaciones. Innovación, eficiencia y trabajo colaborativo.",
+    "meta_keywords": "Sysmo, software a medida, desarrollo de software, soluciones tecnológicas, consultora de software, innovación tecnológica, eficiencia digital, trabajo colaborativo, transformación digital"
   }
 }

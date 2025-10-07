@@ -4,7 +4,7 @@ date: 2017-03-01T10:47:55+06:00
 description: "Website"
 image: "/images/customers/HamburgSud.png"
 client: "Hamburg Sud"
-category: "Website"
+category: "website development"
 status: "In Production"
 ---
 # Hamburg Sud Web Portal
