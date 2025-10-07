@@ -1,5 +1,5 @@
 ---
-title: "Automatización de procesos"
+title: "Integración de bases de datos"
 date: 2014-02-01T10:47:55+06:00
 description: "Automatización de procesos manuales con múltiples bases de datos"
 image: "/images/customers/Lidherma.png"
