@@ -14,9 +14,9 @@ hero_slider:
         link: "/about"
 
     # slider item
-    - subtitle: "Construimos"
-      title: "Soluciones que conectan"
-      content: "Te apoyamos con tecnologías que funcionen como habilitadoras de crecimiento"
+    - subtitle: "Somos"
+      title: "Faciltadores de tecnología"
+      content: "Te ayudamos a emplear la tecnología como vehículo para tu negocio"
       bg_image: "/images/slider/banner-2.jpg"
       button:
         enable: false
@@ -24,9 +24,9 @@ hero_slider:
         link: "/about"
 
     # slider item
-    - subtitle: "Construimos"
-      title: "Soluciones que conectan"
-      content: "Te apoyamos con tecnologías que funcionen como habilitadoras de crecimiento"
+    - subtitle: "Desarrollamos"
+      title: "Soluciones digitales"
+      content: "Sistemas, aplicaciones móviles, IA, integraciones y consultoría a tu servicio"
       bg_image: "/images/slider/banner-3.jpg"
       button:
         enable: false
@@ -34,9 +34,9 @@ hero_slider:
         link: "/about"
 
     # slider item
-    - subtitle: "Construimos"
-      title: "Soluciones que conectan"
-      content: "Te apoyamos con tecnologías que funcionen como habilitadoras de crecimiento"
+    - subtitle: "Acompañamos"
+      title: "A nuestros clientes en su transformación digital"
+      content: "Implementamos diversas soluciones para integrar, digitalizar y hacer más eficientes negocios y procesos"
       bg_image: "/images/slider/banner-4.jpg"
       button:
         enable: false
