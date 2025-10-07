@@ -5,7 +5,7 @@ description: "Desarrollo de sistema para gestión de deuda en el municipio"
 image: "/images/customers/Lujan.png"
 client: "Municipio de Luján"
 category: "Sector Público"
-status: "Finalizado"
+status: "En Producción"
 ---
 # Sistema de gestión de deuda municipio de Luján
 
