@@ -1,6 +1,6 @@
 ---
-title: "Sist Int de Casos de Violencia"
-date: 2024-02-07T10:47:55+06:00
+title: "Integración y mejora de sistema"
+date: 2022-06-01T10:47:55+06:00
 description: "Fortalecimiento del Sistema Integrado de Casos de Violencia por Motivos de Género"
 image: "/images/customers/genero.png"
 client: "Ministerio de las Mujeres, Géneros y Diversidad de la Nación"
