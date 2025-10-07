@@ -1,6 +1,6 @@
 ---
 title: "App La Matanza"
-date: 2024-02-07T10:47:55+06:00
+date: 2024-06-08T10:47:55+06:00
 description: "Desarrollo de aplicación móvil para ciudadanos de La Matanza"
 image: "/images/customers/matanza.png"
 client: "Municipio de La Matanza"
