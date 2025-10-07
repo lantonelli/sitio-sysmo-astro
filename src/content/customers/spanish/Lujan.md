@@ -1,6 +1,6 @@
 ---
-title: "Sistema de gestión de deuda en Luján"
-date: 2024-02-07T10:47:55+06:00
+title: "Sistema de gestión de deuda"
+date: 2022-11-20T10:47:55+06:00
 description: "Desarrollo de sistema para gestión de deuda en el municipio"
 image: "/images/customers/Lujan.png"
 client: "Municipio de Luján"
