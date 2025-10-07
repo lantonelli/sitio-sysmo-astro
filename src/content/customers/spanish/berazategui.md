@@ -1,6 +1,6 @@
 ---
 title: "Sistema de Libre Deuda"
-date: 2024-02-07T10:47:55+06:00
+date: 2025-09-01T10:47:55+06:00
 description: "Desarrollo de sistema web para la generación del trámite de libre deuda"
 image: "/images/customers/berazategui.png"
 client: "Municipio de Berazategui"
