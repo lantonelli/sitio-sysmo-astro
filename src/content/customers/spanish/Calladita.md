@@ -1,6 +1,6 @@
 ---
 title: "Sitio Crowdfunding"
-date: 2019-08-01T10:47:55+06:00
+date: 2021-03-01T10:47:55+06:00
 description: "Desarrollo de sitio web para financiamiento de Película Calladita"
 image: "/images/customers/Calladita.png"
 client: "Calladita Film"
@@ -29,3 +29,5 @@ Se crearon distintos niveles de NFT con distintos precios y beneficios para los 
 - La Web quedó disponible para poder visualizar a las personas que aportaron
 
 - Se pudo cumplir con el objetivo de ser la primera película europea financiada por la venta de NFTs
+
+- La película se filmó en 2023, se estrenó en Netflix en 2024 y estuvo varias semanas entre las más vistas en diversos países
