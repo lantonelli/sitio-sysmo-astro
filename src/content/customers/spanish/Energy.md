@@ -13,7 +13,7 @@ status: "En Producción"
 
 ## 🎯 Problemática planteada
 
-La empresa **Energy Safe** necesitaba una herramienta para poder gestionar de forma integrada su operatoria (compras, ventas, producción, facturación, finanzaS).
+La empresa **Energy Safe** necesitaba una herramienta para poder gestionar de forma integrada su operatoria (compras, ventas, producción, stock, facturación, finanzas).
 
 ## 🎯 Solución
 
